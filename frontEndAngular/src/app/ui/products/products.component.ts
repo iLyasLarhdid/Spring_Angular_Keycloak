@@ -21,7 +21,7 @@ export class ProductsComponent implements OnInit{
 
   public getProducts() : void{
     this.httpClient.get(
-      "http://localhost:8081/api/products"
+      "http://localhost:8090/api/products"
     ).subscribe(
       {
         next : (data) => {
